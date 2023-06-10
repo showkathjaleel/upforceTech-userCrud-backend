@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 import userRoute from './routes/user.js'
 import * as dotenv from "dotenv"
 dotenv.config()
-// console.log(process.env.MONGO_URL)
+ console.log(process.env.MONGO_URL)
 
 async function connectToDatabase() {
     try{

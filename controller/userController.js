@@ -12,6 +12,7 @@ const randomImageName = (bytes = 32) =>
   const BASE_URL=process.env.BASE_URL
 
 export const paginatedUsers = async (req, res) => {
+  console.log('[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[[')
   const page = req.query.page || 1;
 //   console.log(page);
   const ITEM_PER_PAGE = 4;
