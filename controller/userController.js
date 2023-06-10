@@ -1,5 +1,4 @@
 import User from "../models/User.js";
-import cloudinary from "../utils/cloudinary.js";
 import crypto from "crypto";
 import fs from "fs";
 import csv from "fast-csv";
