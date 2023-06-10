@@ -173,3 +173,7 @@ export const exportToCsv = async (req, res) => {
   csvStream.end();
   writablestream.end();
 };
+
+export const test=async (req , res)=>{
+  res.send('testinggggggggggggggggggggggggggggg')
+}

@@ -1,5 +1,5 @@
 import express from 'express'
-import { getAllUsers , addUser,getUser , editUser , deleteUser  , exportToCsv , paginatedUsers } from '../controller/userController.js'
+import { getAllUsers , addUser,getUser , editUser , deleteUser  , exportToCsv , paginatedUsers , test } from '../controller/userController.js'
 const router= express.Router()
 // import multer from 'multer'
 // const storage = multer.memoryStorage()
@@ -18,6 +18,8 @@ router.put('/edit-user/:id' , upload.single("user_profile") , editUser)
 router.delete('/delete-user/:id', deleteUser )
 
 router.get('/paginated-users' , paginatedUsers)
+
+router.get('/test1/test2',test)
 
 router.get('/:id' , getUser)
 
