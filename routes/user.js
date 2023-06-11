@@ -1,10 +1,10 @@
 import express from 'express'
 import { getAllUsers , addUser,getUser , editUser , deleteUser  , exportToCsv , paginatedUsers , test } from '../controller/userController.js'
 const router= express.Router()
-// import multer from 'multer'
-// const storage = multer.memoryStorage()
-// const upload = multer({ storage })
-import upload from '../multerConfig/storageConfig.js'
+import multer from 'multer'
+const storage = multer.memoryStorage()
+const upload = multer({ storage })
+// import upload from '../multerConfig/storageConfig.js'
 
 
 router.get('/all-user' ,  getAllUsers)
